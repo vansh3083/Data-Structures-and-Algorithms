@@ -16,7 +16,6 @@ public class SearchInString {
             if (target == str.charAt(i)){
                 return true;
             }
-
         }
         return false;
     }
