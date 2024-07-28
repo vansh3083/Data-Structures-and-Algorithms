@@ -3,14 +3,11 @@ class Solution {
 
         int[] ans = {-1,-1};
 
-        int start = search(nums, target,true);
-        int end  =  search(nums, target, false);
-
-        ans[0]= start;
-        ans[1]=end;
-
+        ans[0] = search(nums, target,true);
+        if(ans[0]!=-1){
+            ans[1] = search(nums, target, false);
+        }
         return ans;
-
     }
 
     static int search(int[] nums, int target, boolean findStartIndex){
