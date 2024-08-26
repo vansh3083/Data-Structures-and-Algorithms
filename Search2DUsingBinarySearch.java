@@ -9,7 +9,9 @@ public class Search2DUsingBinarySearch {
                 {7,8,9}
         };
 
+        System.out.println(Arrays.toString(search(arr,10)));
         System.out.println(Arrays.toString(search(arr,9)));
+        System.out.println(Arrays.toString(search(arr,1)));
     }
 
     static int[] search(int[][] matrix, int target){
